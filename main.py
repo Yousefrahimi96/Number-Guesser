@@ -10,7 +10,7 @@ sri = pd.Series([5, 6, 8, 5])
 def start_game():
     random_number = randint(1, 100)
     while True:
-        input_number = input("Please inter your guess number: ")
+        input_number = input("Please inter your guess number between 1 and 100: ")
         
         if input_number == "q":
             print("Thank you for playing game, Good bye")
@@ -24,7 +24,7 @@ def start_game():
             continue
         
         if input_number == random_number:
-            print(f"Good for you for guessing{random_number}")
+            print(f"Good for you for guessing {random_number}")
             break
         elif input_number < random_number:
             print("Your guess is low")
